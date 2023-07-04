@@ -1,5 +1,7 @@
 package models
 
+import "gorm.io/plugin/soft_delete"
+
 type Users struct {
 	ID        uint64                `gorm:"column:id;primaryKey"`
 	FirstName string                `gorm:"column:name_first"`
